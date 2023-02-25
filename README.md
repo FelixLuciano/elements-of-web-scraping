@@ -1,5 +1,5 @@
 [Maciel Calebe Vidal, Dr](https://www.linkedin.com/in/macielvidal/). Análise de
-Textos de Fontes Desestruturadas e Web. Insper, 2023.
+Textos de Fontes Desestruturadas e Web. [Insper](https://www.insper.edu.br), 2023.
 
 # Web Text Analysis
 

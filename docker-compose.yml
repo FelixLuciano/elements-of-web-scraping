@@ -1,0 +1,10 @@
+version: '3.8'
+name: analise-de-textos-de-fontes-desestruturadas-e-web
+
+services:
+  jupyter:
+    build: .
+    volumes:
+      - ./notebooks:/app/notebooks
+    ports:
+      - "8888:8888"

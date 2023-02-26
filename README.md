@@ -1,5 +1,6 @@
 [Maciel Calebe Vidal, Dr](https://www.linkedin.com/in/macielvidal/). Análise de
-Textos de Fontes Desestruturadas e Web. [Insper](https://www.insper.edu.br), 2023.
+Textos de Fontes Desestruturadas e Web.
+[Insper](https://www.insper.edu.br), 2023.
 
 # Web Text Analysis
 
@@ -39,24 +40,18 @@ following installed on your system:
    container:
 
 ```sh
-docker-compose up
+docker-compose up --detach --wait
 ```
 
 4. Open the Command Palette (press `Ctrl+Shift+P` on Windows/Linux or
    `Cmd+Shift+P` on Mac) and type "Jupyter: Specify local or remote Jupyter
    server for connections".
-5. Select "Existing" from the list of options and enter `http://localhost:8888`.
+5. Select "Existing" from the list of options and enter
+   `http://localhost:8888?token=my-secret-token`.
 6. Open a notebook file in Visual Studio Code.
 7. Open the Command Palette again and type "notebook: Select Notebook Kernel".
 8. Select the option with the name of the remote connection.
 9. Start running cells.
-
-## Security Considerations
-
-By default, the Jupyter Notebook server is configured to run with authentication
-tokens disabled and with the `_xsrf` check disabled. This makes it easier to get
-started, but it also means that anyone with access to the server URL can connect
-to the server and execute arbitrary code.
 
 ## Bibliography
 

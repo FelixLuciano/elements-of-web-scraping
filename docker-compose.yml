@@ -1,10 +1,15 @@
-version: '3.8'
-name: analise-de-textos-de-fontes-desestruturadas-e-web
+version: '3'
+name: web-text-analysis
 
 services:
   jupyter:
+    image: jupyter/base-notebook
+    user: root
+    environment:
+      - GRANT_SUDO=yes
+      - JUPYTER_TOKEN=my-secret-token
     build: .
     volumes:
-      - ./notebooks:/app/notebooks
+      - ./notebooks:/home/jovyan/notebooks
     ports:
       - "8888:8888"

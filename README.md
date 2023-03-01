@@ -17,6 +17,10 @@ Textos de Fontes Desestruturadas e Web.
     VIDAL, Maciel (2023)
 </p>
 
+## **⚠️ This project is a work in progress and is not yet complete.**
+
+---
+
 ## objectives
 
 - Extract data from unstructured files like PDFs, images and web pages;
@@ -52,6 +56,10 @@ docker-compose up --detach --wait
 7. Open the Command Palette again and type "notebook: Select Notebook Kernel".
 8. Select the option with the name of the remote connection.
 9. Start running cells.
+
+## Project
+
+[Read the documentation](notebooks/project).
 
 ## Bibliography
 

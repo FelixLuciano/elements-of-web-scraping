@@ -11,5 +11,12 @@ services:
     build: .
     volumes:
       - ./notebooks:/home/jovyan/notebooks
+      - ./requirements.txt:/tmp/requirements.txt
     ports:
       - "8888:8888"
+    command: >
+      bash -c "
+        pip install --no-cache-dir --upgrade pip && \
+        pip install --no-cache-dir -r /tmp/requirements.txt && \
+        start-notebook.sh
+      "

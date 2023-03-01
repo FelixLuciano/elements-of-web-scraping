@@ -1,0 +1,9 @@
+numpy
+matplotlib
+pandas
+plotly
+seaborn
+ghostscript
+camelot-py[cv]
+excalibur-py
+PyPDF2<3.0

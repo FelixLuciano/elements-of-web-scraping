@@ -60,7 +60,7 @@ pip install -r requirements.txt
 8. Choose "Select Another Kernel..."
 9. Choose "Existing Jupyter Server..."
 10. Select "Enter the URL of the running Jupyter server" from the list of options and enter
-   `http://localhost:8888?token=my-secret-token` as the URL, using the same secret token that you set in step 3..
+   `http://localhost:8888?token=YOUR_SECRET_TOKEN` as the URL, using the same secret token that you set in step 3..
 11. Open a notebook file in Visual Studio Code.
 12. Start running cells by clicking the "Run Cell" button or pressing Shift+Enter.
 

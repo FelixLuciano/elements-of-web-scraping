@@ -32,7 +32,7 @@ Textos de Fontes Desestruturadas e Web.
 Before you can use run the files in this project, you'll need to have the
 following installed on your system:
 
-- [Docker](https://www.docker.com/);
+- [Docker Desktop](https://www.docker.com/);
 - [Visual Studio Code](https://code.visualstudio.com/);
 - [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter).
 
@@ -40,22 +40,30 @@ following installed on your system:
 
 1. Clone this repository to your local machine.
 2. Open a terminal or command prompt and navigate to the cloned repository.
-3. Run the following command to start the Jupyter Notebook server in a Docker
-   container:
-
+3. Create a `.env` file in the root of the project by running:
+```sh
+echo "JUPYTER_TOKEN=YOUR_SECRET_TOKEN" > .env
+```
+Replace `YOUR_SECRET_TOKEN` with a **secret** token that you choose to access the Jupyter server for running code.
+4. Run the following command to start the Jupyter Notebook server in a Docker container:
 ```sh
 docker-compose up --detach --wait
 ```
+5. Open a container shell and install the Python dependencies:
+```sh
+docker-compose exec jupyter sh
+pip install -r requirements.txt
+```
+6. Open Visual Studio Code and install the Jupyter extension if it's not already installed.
+7. Open the Command Palette (press `Ctrl+Shift+P` on Windows/Linux or
+   `Cmd+Shift+P` on Mac) and type ">notebook: Select Notebook Kernel".
+8. Choose "Select Another Kernel..."
+9. Choose "Existing Jupyter Server..."
+10. Select "Enter the URL of the running Jupyter server" from the list of options and enter
+   `http://localhost:8888?token=my-secret-token` as the URL, using the same secret token that you set in step 3..
+11. Open a notebook file in Visual Studio Code.
+12. Start running cells by clicking the "Run Cell" button or pressing Shift+Enter.
 
-4. Open the Command Palette (press `Ctrl+Shift+P` on Windows/Linux or
-   `Cmd+Shift+P` on Mac) and type "Jupyter: Specify local or remote Jupyter
-   server for connections".
-5. Select "Existing" from the list of options and enter
-   `http://localhost:8888?token=my-secret-token`.
-6. Open a notebook file in Visual Studio Code.
-7. Open the Command Palette again and type "notebook: Select Notebook Kernel".
-8. Select the option with the name of the remote connection.
-9. Start running cells.
 
 ## Project
 

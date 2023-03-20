@@ -14,7 +14,7 @@ Textos de Fontes Desestruturadas e Web.
 > language.
 
 <p align="right">
-    VIDAL, Maciel (2023)
+    VIDAL, Maciel (2023, translated)
 </p>
 
 ## **⚠️ This project is a work in progress and is not yet complete.**

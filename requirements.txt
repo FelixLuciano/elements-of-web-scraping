@@ -1,6 +1,7 @@
-numpy
 matplotlib
+numpy
 pandas
 plotly
-seaborn
 requests
+scikit-learn
+seaborn

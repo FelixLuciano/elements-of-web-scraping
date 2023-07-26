@@ -11,7 +11,11 @@ services:
       - .env
     build: .
     volumes:
-      - ./notebooks:/home/jovyan/notebooks
-      - ./requirements.txt:/tmp/requirements.txt
+      - .:/home/jovyan
+      - 'conda-packages:/opt/conda/lib/python3.10/site-packages/'
     ports:
       - "8888:8888"
+
+volumes:
+  conda-packages:
+    name: 'conda-python310-libs'
